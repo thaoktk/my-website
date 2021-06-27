@@ -1,0 +1,419 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nav */
+/* cho nav nhỏ lại để khỏi chiếm hết thanh bar */
+
+.clear {
+    clear: both;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-color {
+    color: #777 !important;
+}
+
+.bg-color {
+    background-color: #fff !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-fourth {
+    width: 25%;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.text-section {
+    position: absolute;
+    font-size: 36px;
+    width: 100%;
+    color: #fff;
+    bottom: 200px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 1px #000;
+}
+
+#header {
+    position: fixed;
+    height: 44px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav {
+    display: inline-block; 
+    list-style-type: none;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 44px;
+    display: block;
+    font-size: 15px;
+    padding: 0 16px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+#nav li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .mobile-menu-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #000;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #fff;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    padding: 0 16px;
+}
+
+#header .menu-icon,
+#header .search-icon {
+    color: #777;
+    line-height: 44px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-btn:hover .search-icon {
+    color: #fff;
+}
+
+
+
+/* slider */
+
+#slider {
+    margin-top: 43px;
+    min-height: 400px;
+    position: relative;
+    background: url('../img/slider/sky.png') center / cover no-repeat;
+}
+
+#slider .slider-content {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    color: #fff;
+}
+
+#slider .slider-heading {
+    display: inline-block;
+    padding: 8px 24px;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: rgb(63, 60, 60);
+    letter-spacing: 8px;
+}
+
+#content .content-section {
+    padding: 74px 20px;
+    width: 945px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+#content .text-sub-heading {
+    margin-top: 25px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
+#content .about-text {
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .about-info {
+    margin: 16px 0 32px;
+}
+
+#content .user-img {
+    width: 100%;
+    margin-top: 35px;
+    opacity: 0.8;
+}
+
+#content .user-img:hover {
+    opacity: 1;
+}
+
+#content .user-info {
+    padding: 16px;
+}
+
+#content .user-name {
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+#content .text-info {
+    text-align: justify;
+    line-height: 1.4;
+    padding: 16px;
+}
+
+.skill .text-intro {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+#content .skill .name-skill {
+    letter-spacing: 10px;
+}
+
+#content .skill .base-skill {
+    margin-top: 15px;
+    background-color: #d4d1d1;
+}
+
+#content .skill .user-skill {
+    color: #fff;
+    background-color: #616161;
+    padding: 10px 20px;
+    width: var(--percent);
+}
+
+
+.experience-section {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.experience-section .list-experience {
+    background-color: #616161;
+    height: auto;
+    padding: 16px 0;
+}
+
+.experience-section .experience-counter {
+    color: #fff;
+    margin: 16px 0;
+}
+
+.experience-counter .quantity {
+    font-size: 24px;
+}
+
+.experience-counter .experience-name {
+    margin-top: 10px;
+}
+
+.portfolio-section {
+    position: relative;
+    min-height: 400px;
+    background: url('../img/portfolio/14039dc7277ef4388f672d73a28ee1e6.png') center / cover no-repeat;
+}
+
+.list-img .item-img {
+    width: 100%;
+    transition: transform 0.25s ease;
+}
+
+.list-img .item-img:hover {
+    -webkit-transform: scale(1.5); /* or some other value */
+    transform: scale(1.5);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 24px;
+    background-color: rgba(211, 206, 206, 0.4);
+    color: #000;
+    margin-top: 64px;
+    text-decoration: none;
+    border-radius: 2px;
+    
+}
+
+.btn:hover {
+    background-color: rgba(211, 206, 206, 1);
+}
+
+.contact-section {
+    position: relative;
+    min-height: 400px;
+    background: url('../img/portfolio/6fa9c33211ce7c08f2cc4fcef6144b7d.png') center / cover no-repeat;
+}
+
+.map-img {
+    width: 90%;
+    border-radius: 4px;
+}
+
+.contact-content {
+    margin: 48px 0 64px;
+}
+
+.contact-info {
+    line-height: 1.5;
+}
+
+.contact-info i[class*=ti-] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form .contact-submit-btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    border: none;
+}
+
+.contact-form .contact-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#footer {
+    background-color: rgba(0,0,0,0.6);
+    padding: 64px 0;
+    text-align: center;
+}
+
+#footer:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+ #footer .socials-list a {
+    text-decoration: none;
+    color: #fff;
+ }
+
+ #footer .socials-list a:hover {
+    opacity: 0.6;
+ }
+
+#footer .copyright {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #fff;
+}
+
+ #footer .copyright a {
+    color: #fff;
+ }
+
+ #footer .copyright a:hover {
+     color: greenyellow;
+ }
