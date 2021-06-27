@@ -373,6 +373,8 @@ html {
     text-decoration: none;
     border-radius: 2px;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .contact-form .contact-submit-btn:hover {
