@@ -11,8 +11,8 @@
         width: 100% !important;
     }
 
-    .s-mt-16 {
-        margin-top: 16px !important;
+    .s-mt-32 {
+        margin-top: 32px !important;
     }
 
     .s-mt-8 {
@@ -37,7 +37,6 @@
 
     #nav li {
         display: block;
-        border-bottom: 1px solid #ddd;
     }
 
     #nav li:first-child {

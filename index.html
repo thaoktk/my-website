@@ -122,31 +122,31 @@
                         <div class="text-sub-heading">Here are some of my latest lorem work ipsum tipsum.</div>
                         <div class="text-sub-heading mt-8">Click on the images to make them bigger</div>
                         <div class="row list-img mt-32">
-                            <div class="col col-fourth s-col-full">
+                            <div class="col col-fourth s-col-full overflow-img">
                                 <img src="./assets/img/portfolio/list/p1.jpg" alt="pic1" class="item-img">
                             </div>
-                            <div class="col col-fourth s-col-full">
+                            <div class="col col-fourth s-col-full overflow-img">
                                 <img src="./assets/img/portfolio/list/p2.jpg" alt="pic2" class="item-img">
                             </div>
-                            <div class="col col-fourth s-col-full">
+                            <div class="col col-fourth s-col-full overflow-img">
                                 <img src="./assets/img/portfolio/list/p3.jpg" alt="pic3" class="item-img">
                             </div>
-                            <div class="col col-fourth s-col-full">
+                            <div class="col col-fourth s-col-full overflow-img">
                                 <img src="./assets/img/portfolio/list/p4.jpg" alt="pic4" class="item-img">
                             </div>
                         </div>
                         <div class="row list-img mt-16">
-                            <div class="col col-fourth s-col-full">
-                                <img src="./assets/img/portfolio/list/p5.jpg" alt="pic1" class="item-img">
+                            <div class="col col-fourth s-col-full overflow-img">
+                                <img src="./assets/img/portfolio/list/p5.jpg" alt="pic5" class="item-img">
                             </div>
-                            <div class="col col-fourth s-col-full">
-                                <img src="./assets/img/portfolio/list/p6.jpg" alt="pic2" class="item-img">
+                            <div class="col col-fourth s-col-full overflow-img">
+                                <img src="./assets/img/portfolio/list/p6.jpg" alt="pic6" class="item-img">
                             </div>
-                            <div class="col col-fourth s-col-full">
-                                <img src="./assets/img/portfolio/list/p7.jpg" alt="pic3" class="item-img">
+                            <div class="col col-fourth s-col-full overflow-img">
+                                <img src="./assets/img/portfolio/list/p7.jpg" alt="pic7" class="item-img">
                             </div>
-                            <div class="col col-fourth s-col-full">
-                                <img src="./assets/img/portfolio/list/p8.jpg" alt="pic4" class="item-img">
+                            <div class="col col-fourth s-col-full overflow-img">
+                                <img src="./assets/img/portfolio/list/p8.jpg" alt="pic8" class="item-img">
                             </div>
                         </div>
                         <div class="container">
@@ -166,7 +166,7 @@
                             <div class="col col-half s-col-full">
                                 <img src="./assets/img/map/map.jpg" alt="map" class="map-img">
                             </div>
-                            <div class="col col-half s-col-full s-mt-16">
+                            <div class="col col-half s-col-full s-mt-32">
                                 <div class="row contact-info">
                                     <p><i class="ti-location-pin"></i>Chicago, US</p>
                                     <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
@@ -210,31 +210,9 @@
                     </div>
                     <p class="copyright">Powered by <a href="">w3.css</a></p>
                 </div>
+                
             </div>
         </div>
-        <script>
-            var header = document.getElementById('header');
-            var mobileMenu = document.getElementById('mobile-menu');
-            var headerHeight = header.clientHeight;
-
-            mobileMenu.onclick = function () {
-                var isClosed = header.clientHeight === headerHeight;
-
-                if (isClosed) {
-                    header.style.height = 'auto';
-                } else {
-                    header.style.height = null;
-                }
-            }
-
-            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-            for (var i = 0; i < menuItems.length; i++) {
-                var menuItem = menuItems[i];
-
-                menuItem.onclick = function () {
-                    header.style.height = null;
-                }
-            }
-        </script>
+        <script src="./main.js"></script>
     </body>
 </html>
