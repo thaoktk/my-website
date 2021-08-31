@@ -55,14 +55,17 @@ html {
 
 .col-half {
     max-width: 50%;
+    width: 50%;
 }
 
 .col-full {
     max-width: 100%;
+    width: 100%;
 }
 
 .col-fourth {
     max-width: 25%;
+    width: 25%;
 }
 
 .mt-32 {
@@ -296,6 +299,7 @@ html {
 
 .overflow-img {
     overflow: hidden;
+    width: 100%;
 }
 
 .list-img .item-img {

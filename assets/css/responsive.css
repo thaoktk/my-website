@@ -8,6 +8,7 @@
 @media (max-width: 739px) {
     .s-full-width,
     .s-col-full {
+        max-width: 100%;
         width: 100% !important;
     }
 
